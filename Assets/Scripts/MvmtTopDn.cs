@@ -9,8 +9,10 @@ public class MvmtTopDn : MonoBehaviour
     //building larger projects that may benefit from user customization.
     public Rigidbody2D rb;
     public Vector2 AvgDirection;
+    public Vector2 BaseVelocity; //This is a useful variable for knockback, moving terrain and many more
     private float Sources;
     public float Speed = 5f;
+    public bool Stunned = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,111 +25,129 @@ public class MvmtTopDn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyMap.Up))
+        if (!Stunned)
         {
-            AvgDirection = AvgDirection*Sources - Vector2.up;
-            Sources -= 1;
-            if (Sources != 0)
+            if (Input.GetKeyUp(KeyMap.Up))
             {
-                AvgDirection = AvgDirection / Sources;
+                AvgDirection = AvgDirection * Sources - Vector2.up;
+                Sources -= 1;
+                if (Sources != 0)
+                {
+                    AvgDirection = (AvgDirection / Sources).normalized;
+                }
+
+                else
+                {
+                    AvgDirection = Vector2.zero;
+                }
+                rb.velocity = BaseVelocity + Speed * AvgDirection;
+                Debug.Log(AvgDirection);
             }
 
-            else
+            if (Input.GetKeyUp(KeyMap.Down))
             {
-                AvgDirection = Vector2.zero;
+                AvgDirection = AvgDirection * Sources - Vector2.down;
+                Sources -= 1;
+                if (Sources != 0)
+                {
+                    AvgDirection = (AvgDirection / Sources).normalized;
+                }
+
+                else
+                {
+                    AvgDirection = Vector2.zero;
+                }
+                rb.velocity = BaseVelocity + Speed * AvgDirection;
             }
-            rb.velocity = Speed * AvgDirection;
-            Debug.Log(AvgDirection);
+
+            if (Input.GetKeyUp(KeyMap.Left))
+            {
+                AvgDirection = AvgDirection * Sources - Vector2.left;
+                Sources -= 1;
+                if (Sources != 0)
+                {
+                    AvgDirection = (AvgDirection / Sources).normalized;
+                }
+
+                else
+                {
+                    AvgDirection = Vector2.zero;
+                }
+                rb.velocity = BaseVelocity + Speed * AvgDirection;
+            }
+
+            if (Input.GetKeyUp(KeyMap.Right))
+            {
+                AvgDirection = AvgDirection * Sources - Vector2.right;
+                Sources -= 1;
+                if (Sources != 0)
+                {
+                    AvgDirection = (AvgDirection / Sources).normalized;
+                }
+
+                else
+                {
+                    AvgDirection = Vector2.zero;
+                }
+                rb.velocity = BaseVelocity + Speed * AvgDirection;
+            }
         }
-
-        if (Input.GetKeyUp(KeyMap.Down))
+        
+        //What happens if the player is stunned? code your answer here:
+        else
         {
-            AvgDirection = AvgDirection*Sources - Vector2.down;
-            Sources -= 1;
-            if (Sources != 0)
-            {
-                AvgDirection = AvgDirection / Sources;
-            }
 
-            else
-            {
-                AvgDirection = Vector2.zero;
-            }
-            rb.velocity = Speed * AvgDirection;
         }
-
-        if (Input.GetKeyUp(KeyMap.Left))
-        {
-            AvgDirection = AvgDirection * Sources - Vector2.left;
-            Sources -= 1;
-            if (Sources != 0)
-            {
-                AvgDirection = AvgDirection / Sources;
-            }
-
-            else
-            {
-                AvgDirection = Vector2.zero;
-            }
-            rb.velocity = Speed * AvgDirection;
-        }
-
-        if (Input.GetKeyUp(KeyMap.Right))
-        {
-            AvgDirection = AvgDirection * Sources - Vector2.right;
-            Sources -= 1;
-            if (Sources != 0)
-            {
-                AvgDirection = AvgDirection / Sources;
-            }
-
-            else
-            {
-                AvgDirection = Vector2.zero;
-            }
-            rb.velocity = Speed * AvgDirection;
-        }
-
     }
 
     private void FixedUpdate()
     {
-        AvgDirection = Vector2.zero;
-        Sources = 0f;
-        if (Input.GetKey(KeyMap.Up))
-        {
-            AvgDirection += Vector2.up;
-            Sources += 1;
-        }
-
-        if (Input.GetKey(KeyMap.Down))
-        {
-            AvgDirection += Vector2.down;
-            Sources += 1;
-        }
-
-        if (Input.GetKey(KeyMap.Left))
-        {
-            AvgDirection += Vector2.left;
-            Sources += 1;
-        }
-
-        if (Input.GetKey(KeyMap.Right))
-        {
-            AvgDirection += Vector2.right;
-            Sources += 1;
-        }
-
-        if (Sources != 0)
-        {
-            AvgDirection = AvgDirection / Sources;
-        }
-        
-        else
+        if (!Stunned)
         {
             AvgDirection = Vector2.zero;
+            Sources = 0f;
+            if (Input.GetKey(KeyMap.Up))
+            {
+                AvgDirection += Vector2.up;
+                Sources += 1;
+            }
+
+            if (Input.GetKey(KeyMap.Down))
+            {
+                AvgDirection += Vector2.down;
+                Sources += 1;
+            }
+
+            if (Input.GetKey(KeyMap.Left))
+            {
+                AvgDirection += Vector2.left;
+                Sources += 1;
+            }
+
+            if (Input.GetKey(KeyMap.Right))
+            {
+                AvgDirection += Vector2.right;
+                Sources += 1;
+            }
+
+            if (Sources != 0)
+            {
+                AvgDirection = (AvgDirection / Sources).normalized;
+            }
+
+            else
+            {
+                AvgDirection = Vector2.zero;
+            }
+
+            rb.velocity = BaseVelocity + Speed * AvgDirection;
         }
 
-        rb.velocity = Speed * AvgDirection;
+        //What happens if the player is stunned? 
+        else
+        {
+
+        }
+        
     }
 }

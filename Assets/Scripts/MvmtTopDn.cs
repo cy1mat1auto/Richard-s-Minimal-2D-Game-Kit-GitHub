@@ -12,7 +12,7 @@ public class MvmtTopDn : MonoBehaviour
     public Vector2 BaseVelocity; //This is a useful variable for knockback, moving terrain and many more
     private float Sources;
     public float Speed = 5f;
-    public bool Stunned = false;
+    public bool Stunned = false; //This is useful for introducing special behaviors when the player takes damage
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +41,6 @@ public class MvmtTopDn : MonoBehaviour
                     AvgDirection = Vector2.zero;
                 }
                 rb.velocity = BaseVelocity + Speed * AvgDirection;
-                Debug.Log(AvgDirection);
             }
 
             if (Input.GetKeyUp(KeyMap.Down))

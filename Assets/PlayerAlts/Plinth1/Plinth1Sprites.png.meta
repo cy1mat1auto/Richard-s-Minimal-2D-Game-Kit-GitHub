@@ -14,6 +14,42 @@ TextureImporter:
   - first:
       213: 5436614289418304642
     second: Plinth1Sprites_3
+  - first:
+      213: 1360066181018596313
+    second: Plinth1Sprites_0
+  - first:
+      213: -8636695430414207423
+    second: Plinth1Sprites_1
+  - first:
+      213: 6968222811980623693
+    second: Plinth1Sprites_2
+  - first:
+      213: -7691567188124690793
+    second: Plinth1Sprites_3
+  - first:
+      213: -3545186525522755661
+    second: Plinth1Sprites_4
+  - first:
+      213: 647942875004414041
+    second: Plinth1Sprites_5
+  - first:
+      213: 7028665771885622796
+    second: Plinth1Sprites_6
+  - first:
+      213: 5091145967499355634
+    second: Plinth1Sprites_7
+  - first:
+      213: -8503094956476431178
+    second: Plinth1Sprites_8
+  - first:
+      213: 763651957211864235
+    second: Plinth1Sprites_9
+  - first:
+      213: 8946320281205191413
+    second: Plinth1Sprites_10
+  - first:
+      213: -5501761383320372357
+    second: Plinth1Sprites_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -140,10 +176,10 @@ TextureImporter:
       name: Plinth1Sprites_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 86
-        height: 86
+        x: 4
+        y: 146
+        width: 84
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9a5e238ef93814c0800000000000000
-      internalID: -4316636477549290854
+      spriteID: 9d3b2a65cfcefd210800000000000000
+      internalID: 1360066181018596313
       vertices: []
       indices: 
       edges: []
@@ -161,10 +197,10 @@ TextureImporter:
       name: Plinth1Sprites_1
       rect:
         serializedVersion: 2
-        x: 133
-        y: 11
-        width: 61
-        height: 68
+        x: 95
+        y: 144
+        width: 84
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e81b69afe08035b70800000000000000
-      internalID: 8886455350158864782
+      spriteID: 146fbe4e34b442880800000000000000
+      internalID: -8636695430414207423
       vertices: []
       indices: 
       edges: []
@@ -182,10 +218,10 @@ TextureImporter:
       name: Plinth1Sprites_2
       rect:
         serializedVersion: 2
-        x: 228
-        y: 9
-        width: 73
-        height: 76
+        x: 190
+        y: 144
+        width: 84
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c444af1bc749ae920800000000000000
-      internalID: 3020389763388163148
+      spriteID: d4fe0ef6ab914b060800000000000000
+      internalID: 6968222811980623693
       vertices: []
       indices: 
       edges: []
@@ -203,10 +239,10 @@ TextureImporter:
       name: Plinth1Sprites_3
       rect:
         serializedVersion: 2
-        x: 327
-        y: 22
-        width: 57
-        height: 60
+        x: 296
+        y: 138
+        width: 64
+        height: 121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,8 +250,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28c379d44ebb27b40800000000000000
-      internalID: 5436614289418304642
+      spriteID: 79617c1e460124590800000000000000
+      internalID: -7691567188124690793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plinth1Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 139
+        width: 63
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bff6b363a7fccec0800000000000000
+      internalID: -3545186525522755661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plinth1Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 140
+        width: 64
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9582263ac94fdf800800000000000000
+      internalID: 647942875004414041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plinth1Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 84
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c067032b746da8160800000000000000
+      internalID: 7028665771885622796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plinth1Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 5
+        width: 85
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5267c884267a640800000000000000
+      internalID: 5091145967499355634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plinth1Sprites_8
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 3
+        width: 84
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b48ecb3030fef980800000000000000
+      internalID: -8503094956476431178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plinth1Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 2
+        width: 65
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac15a9b869099a00800000000000000
+      internalID: 763651957211864235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plinth1Sprites_10
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1
+        width: 63
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2bb1865e6b72c70800000000000000
+      internalID: 8946320281205191413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plinth1Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 0
+        width: 64
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b3a34eb21d5a3b0800000000000000
+      internalID: -5501761383320372357
       vertices: []
       indices: 
       edges: []

@@ -12,7 +12,7 @@ using UnityEditor;
             DrawDefaultInspector();
 
             AnimClipBuilder01 myScript = (AnimClipBuilder01)target;
-            if (GUILayout.Button("Build Object"))
+            if (GUILayout.Button("Auto Reanimate"))
             {
                 myScript.BuildClip();
             }

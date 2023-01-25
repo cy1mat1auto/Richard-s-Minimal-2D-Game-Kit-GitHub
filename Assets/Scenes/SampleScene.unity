@@ -12365,6 +12365,7 @@ GameObject:
   - component: {fileID: 2142032870}
   - component: {fileID: 2142032872}
   - component: {fileID: 2142032871}
+  - component: {fileID: 2142032873}
   m_Layer: 0
   m_Name: AnimationSample
   m_TagString: Untagged
@@ -12456,6 +12457,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2142032873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142032869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2682fde7e219db9448e0545d4f5a1da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlinthNumber: 1
+  Anim: {fileID: 2142032871}
+  IdleDown: {fileID: 7400000, guid: 3f5571dc53ef9ad4ea3940bccea85b03, type: 2}
+  WalkDown: {fileID: 7400000, guid: 30375e01cd6eec944b2f626f3eda5575, type: 2}
+  WalkLeft: {fileID: 7400000, guid: 35da640b4206ca741a556464eaccd41f, type: 2}
+  WalkRight: {fileID: 7400000, guid: ef0feb5a96918a849bda6f437d4164c9, type: 2}
+  WalkUp: {fileID: 7400000, guid: 2bda459ca7158f045a49b9c5e99d77b8, type: 2}
+  UniqueSprites:
+  - {fileID: -4316636477549290854, guid: 550ad677a0b763a4b92865cd565c2357, type: 3}
+  - {fileID: 8886455350158864782, guid: 550ad677a0b763a4b92865cd565c2357, type: 3}
+  - {fileID: 3020389763388163148, guid: 550ad677a0b763a4b92865cd565c2357, type: 3}
+  - {fileID: 5436614289418304642, guid: 550ad677a0b763a4b92865cd565c2357, type: 3}
 --- !u!1001 &1727719871662739384
 PrefabInstance:
   m_ObjectHideFlags: 0

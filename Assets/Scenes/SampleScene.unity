@@ -8321,6 +8321,7 @@ GameObject:
   - component: {fileID: 1030784116}
   - component: {fileID: 1030784115}
   - component: {fileID: 1030784114}
+  - component: {fileID: 1030784117}
   m_Layer: 0
   m_Name: AnimationSample
   m_TagString: Untagged
@@ -8412,6 +8413,38 @@ Transform:
   m_Father: {fileID: 1539384337}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1030784117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030784113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2682fde7e219db9448e0545d4f5a1da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlinthNumber: 11
+  Anim: {fileID: 1030784114}
+  IdleDown: {fileID: 7400000, guid: 4ad350134077589459dceaae92d30c45, type: 2}
+  WalkDown: {fileID: 7400000, guid: fef4495031b8b8d44b6a3c59262f82b4, type: 2}
+  WalkLeft: {fileID: 7400000, guid: a04d6e059da65e7478ea95c3d861933d, type: 2}
+  WalkRight: {fileID: 7400000, guid: 1218101aae74f9b41827fe1d1b9d14d6, type: 2}
+  WalkUp: {fileID: 7400000, guid: 36321ed0c05545042a0743b0f5bc2c56, type: 2}
+  UniqueSprites:
+  - {fileID: -5366345640530898112, guid: a029d7bbfdbf44e449dfa412cd4d027e, type: 3}
+  - {fileID: -8451302287050643163, guid: a029d7bbfdbf44e449dfa412cd4d027e, type: 3}
+  - {fileID: 7132942657087453772, guid: a029d7bbfdbf44e449dfa412cd4d027e, type: 3}
+  - {fileID: -1402884146366944220, guid: a029d7bbfdbf44e449dfa412cd4d027e, type: 3}
+  - {fileID: 3796676662995141016, guid: a029d7bbfdbf44e449dfa412cd4d027e, type: 3}
+  - {fileID: -4838790585634485178, guid: a029d7bbfdbf44e449dfa412cd4d027e, type: 3}
+  - {fileID: 9059143177517592172, guid: a029d7bbfdbf44e449dfa412cd4d027e, type: 3}
+  - {fileID: -2395200006272517015, guid: a029d7bbfdbf44e449dfa412cd4d027e, type: 3}
+  - {fileID: -7469975836619470427, guid: a029d7bbfdbf44e449dfa412cd4d027e, type: 3}
+  - {fileID: -7925935568585719005, guid: a029d7bbfdbf44e449dfa412cd4d027e, type: 3}
+  - {fileID: -1955720173331214824, guid: a029d7bbfdbf44e449dfa412cd4d027e, type: 3}
+  - {fileID: 4679060663395557996, guid: a029d7bbfdbf44e449dfa412cd4d027e, type: 3}
 --- !u!1 &1039993835
 GameObject:
   m_ObjectHideFlags: 0
